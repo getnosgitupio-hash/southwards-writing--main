@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Onest Bold';
+  src: url('../src/assets/font/Onest-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest Regular';
+  src: url('../src/assets/font/Onest-Regular.ttf') format('truetype');
+}
+body{
+    overflow-x: hidden;
+      font-family: 'Onest Bold';
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Onest Bold';
+}
+p,span,a,li,button,input,textarea,tbody{
+  font-family: 'Onest Regular';
+}
+
+
+@keyframes slash-sweep {
+  0% {
+    transform: translateX(-160%) rotate(8deg);
+  }
+  100% {
+    transform: translateX(160%) rotate(8deg);
+  }
+}
