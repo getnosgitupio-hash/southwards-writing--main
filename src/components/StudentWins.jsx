@@ -1,8 +1,9 @@
 import { useState } from "react";
-import arrowDown from "../assets/arrow-down.png"; 
+import arrowDown from "../assets/arrow-down.png";
 import loadingGif from "../assets/loading.gif";
 import playIcon from "../assets/play.png";
-import verifiedIcon from "../assets/verified-icon.png"; // ✅ your verification icon
+import verifiedIcon from "../assets/verified-icon.png";
+import PaymentButton from "./PaymentButton";
 
 // Import your thumbnail images
 import thumb1 from "../assets/video-1.png";
@@ -109,20 +110,7 @@ Secure & Safe Checkout              </p>
 
       {/* CTA Button */}
       <div className="mt-6 text-center">
-  <a
-    href="https://www.instamojo.com/@gbuguidi85/lb606e7b7c5ff4015958944d0470d2c2f/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <button className="uppercase group relative overflow-hidden bg-[#D2F801] px-8 py-6 rounded-2xl font-extrabold text-3xl max-sm:text-sm max-sm:px-6 max-sm:py-5">
-      JOIN THE 3-DAY Writing WORKSHOP
-      <span
-        aria-hidden="true"
-        className="absolute inset-[-100%] -left-[30%] bg-gradient-to-r from-transparent via-white/100 to-transparent [clip-path:polygon(10%_0%,40%_0%,30%_100%,0%_100%)] transform -translate-x-[390%] rotate-[8deg] blur-sm group-hover:animate-slash-sweep"
-      />
-    </button>
-  </a>
+  <PaymentButton label="JOIN THE 3-DAY Writing WORKSHOP" className="max-sm:text-sm max-sm:px-6 max-sm:py-5" />
 
   <p className="mt-4 text-sm font-semibold text-gray-800 max-sm:text-xs">
     Live on Zoom | May 11th – 13th, 2026 | 8 PM - 10 PM IST

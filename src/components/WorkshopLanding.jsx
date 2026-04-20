@@ -1,10 +1,10 @@
 import arrowLeft from "../assets/arrow-left.png";
-import arrowRight from "../assets/arrow-right.png";
 import verifiedIcon from "../assets/verified-icon.png";
 import bgImage from "../assets/bg.png";
 import loadingGif from "../assets/loading.gif";
 import "../App.css";
 import Heroimage from "../assets/hero-new.png";
+import PaymentButton from "./PaymentButton";
 
 const WorkshopLanding = () => {
   return (
@@ -105,20 +105,7 @@ In just <b>3 days,</b> I’ll show you the <strong>exact system Band 8+ scorers 
       </div>
 
       {/* CTA Button */}
-      <a
-  href="https://www.instamojo.com/@gbuguidi85/lb606e7b7c5ff4015958944d0470d2c2f/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block"
->
-  <button className="uppercase group relative overflow-hidden bg-[#D2F801] px-8 py-6 rounded-2xl font-extrabold text-3xl max-sm:text-base max-sm:px-4 max-sm:py-3">
-    JOIN THE 3-DAY Writing WORKSHOP
-    <span
-      aria-hidden="true"
-      className="absolute inset-[-100%] -left-[30%] bg-gradient-to-r from-transparent via-white/100 to-transparent [clip-path:polygon(10%_0%,40%_0%,30%_100%,0%_100%)] transform -translate-x-[390%] rotate-[8deg] blur-sm group-hover:animate-slash-sweep"
-    />
-  </button>
-</a>
+      <PaymentButton label="JOIN THE 3-DAY Writing WORKSHOP" />
 
 <p className="mt-4 text-center text-sm font-semibold text-gray-700">
   Live on Zoom | May 11th – 13th, 2026 | 8 PM - 10 PM IST

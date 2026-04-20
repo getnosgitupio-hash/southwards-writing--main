@@ -1,7 +1,8 @@
 import React from "react";
-import tickIcon from "../assets/tick.png"; // ✅ your tick image
-import verifiedIcon from "../assets/verified-icon.png"; // ✅ your verification icon
-import loadingGif from "../assets/loading.gif"; // ✅ your loading/progress gif
+import tickIcon from "../assets/tick.png";
+import verifiedIcon from "../assets/verified-icon.png";
+import loadingGif from "../assets/loading.gif";
+import PaymentButton from "./PaymentButton";
 
 const WorkshopSchedule = () => {
   return (
@@ -156,20 +157,7 @@ const WorkshopSchedule = () => {
 
       {/* CTA Button */}
       <div className="mt-8 flex flex-col items-center">
-  <a
-    href="https://www.instamojo.com/@gbuguidi85/lb606e7b7c5ff4015958944d0470d2c2f/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <button className="group relative overflow-hidden bg-[#D2F801] px-8 py-6 rounded-2xl font-extrabold text-3xl max-sm:text-sm max-sm:px-6 max-sm:py-3">
-      JOIN THE 3-DAY Band 8+ SPRINT NOW
-      <span
-        aria-hidden="true"
-        className="absolute inset-[-100%] -left-[30%] bg-gradient-to-r from-transparent via-white/100 to-transparent [clip-path:polygon(10%_0%,40%_0%,30%_100%,0%_100%)] transform -translate-x-[390%] rotate-[8deg] blur-sm group-hover:animate-slash-sweep"
-      />
-    </button>
-  </a>
+  <PaymentButton label="JOIN THE 3-DAY Band 8+ SPRINT NOW" />
 
   <p className="mt-4 text-sm font-semibold text-gray-800 max-sm:text-xs text-center">
     Live on Zoom | May 11th – 13th, 2026 | 8 PM - 10 PM IST

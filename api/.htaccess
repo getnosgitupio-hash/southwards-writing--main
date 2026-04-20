@@ -1,0 +1,13 @@
+# Prevent direct browser access to config.php (contains secrets)
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Disable directory listing
+Options -Indexes
+
+# Allow CORS for PHP files (headers are also set in PHP, this is a backup)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>

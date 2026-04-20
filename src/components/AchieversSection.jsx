@@ -1,6 +1,7 @@
 import arrowDown from "../assets/arrow-down-sec.png";
 import loadingGif from "../assets/loading.gif";
-import studentsImage from "../assets/students.png"; // your 3-students image
+import studentsImage from "../assets/students.png";
+import PaymentButton from "./PaymentButton";
 
 const AchieversSection = () => {
   return (
@@ -56,20 +57,7 @@ const AchieversSection = () => {
 
       {/* CTA Button */}
    <div className="mt-6 text-center">
-  <a
-    href="https://www.instamojo.com/@gbuguidi85/lb606e7b7c5ff4015958944d0470d2c2f/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <button className="group relative overflow-hidden bg-[#D2F801] px-8 py-6 rounded-2xl font-extrabold text-3xl max-sm:text-xs max-sm:px-6 max-sm:py-3">
-      START YOUR Band 8+ WRITING SPRINT TODAY
-      <span
-        aria-hidden="true"
-        className="absolute inset-[-100%] -left-[30%] bg-gradient-to-r from-transparent via-white/100 to-transparent [clip-path:polygon(10%_0%,40%_0%,30%_100%,0%_100%)] transform -translate-x-[390%] rotate-[8deg] blur-sm group-hover:animate-slash-sweep"
-      />
-    </button>
-  </a>
+  <PaymentButton label="START YOUR Band 8+ WRITING SPRINT TODAY" className="max-sm:text-xs max-sm:px-6 max-sm:py-3" />
 
   <p className="mt-4  text-sm font-semibold text-gray-800 max-sm:text-xs">
     Live on Zoom | May 11th – 13th, 2026 | 8 PM - 10 PM IST

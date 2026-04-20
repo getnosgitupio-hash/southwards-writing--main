@@ -1,7 +1,6 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import PromoBanner from './components/PromoBanner.jsx'
-import Band9ScorerSection from './components/Band9ScorerSection.jsx'
 import TrustedSection from './components/TrustedSection.jsx'
 import JourneySection from './components/JourneySection.jsx'
 import StudentWins from './components/StudentWins.jsx'
@@ -10,13 +9,15 @@ import WorkshopLanding from './components/WorkshopLanding.jsx'
 import WorkshopSchedule from './components/WorkshopSchedule.jsx'
 import RiskFreeGuarantee from './components/RiskFreeGuarantee.jsx'
 import EasySteps from './components/EasySteps.jsx'
-import Testimonials from './components/Testimonials.jsx'
 import FAQAccordion from './components/FAQAccordion.jsx'
 import Footer from './components/Footer.jsx'
-// import Mainfooter from "./components/Mainfooter.jsx"
+import { trackViewContent } from './utils/fbEvents.js'
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    // FB ViewContent — fired once when the landing page is first viewed
+    trackViewContent();
+  }, []);
 
   return (
     <>
@@ -27,13 +28,10 @@ function App() {
    <StudentWins />
    <AchieversSection />
    <WorkshopSchedule />
-   {/* <Band9ScorerSection /> */}
    <RiskFreeGuarantee />
    <EasySteps />
-   {/* <Testimonials /> */}
    <FAQAccordion />
    <Footer />
-   {/* <Mainfooter/> */}
     </>
   )
 }
