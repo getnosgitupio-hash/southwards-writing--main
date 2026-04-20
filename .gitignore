@@ -1,3 +1,7 @@
+# Secrets — never commit
+api/config.php
+.env
+
 # Logs
 logs
 *.log
